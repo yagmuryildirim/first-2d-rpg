@@ -35,6 +35,26 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 0);
         }
 
+        //Make sure we can move in this direction
+        //By casting a box there first
+        //If the box returns null, free to move
+        hit = Physics2D.BoxCast(transform.position,
+                                boxCollider.size,
+                                0,
+                                new Vector2(moveDelta.x, 0),
+                                Mathf.Abs(moveDelta.x * Time.deltaTime),
+                                LayerMask.GetMask("Actor", "Blocking"));
+
+
+        //Movement
+        if (hit.collider == null)
+        {
+            transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+        }
+
+        //Make sure we can move in this direction
+        //By casting a box there first
+        //If the box returns null, free to move
         hit = Physics2D.BoxCast(transform.position,
                                 boxCollider.size,
                                 0,
@@ -42,8 +62,15 @@ public class Player : MonoBehaviour
                                 Mathf.Abs(moveDelta.y * Time.deltaTime),
                                 LayerMask.GetMask("Actor", "Blocking"));
 
-        //Movement
 
-        transform.Translate(moveDelta * Time.deltaTime);
+        //Movement
+        if (hit.collider == null)
+        {
+            transform.Translate(0,moveDelta.y * Time.deltaTime,0);
+        }
+
+
+
+        
     }
 }
