@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{ECFFBB2B-1582-266C-EDC1-63AA3CC4820C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Chest.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Collidable.cs" Line="27" Column="32" />
+      <File FileName="Assets/Scripts/Chest.cs" Line="5" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="first-2d-rpg" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Chest.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="96384efe-b0eb-43e6-8f00-1efae3250c7a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

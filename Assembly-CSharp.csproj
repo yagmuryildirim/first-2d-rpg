@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C120DD88-49A4-E570-DA96-2BA5E46B723B}</ProjectGuid>
+    <ProjectGuid>{ECFFBB2B-1582-266C-EDC1-63AA3CC4820C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/CameraMotor.cs" />
+    <Compile Include="Assets/Scripts/Collidable.cs" />
+    <Compile Include="Assets/Scripts/Chest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
