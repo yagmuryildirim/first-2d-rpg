@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : Collidable
+public class Chest : Collectable
 {
-    protected override void OnCollide(Collider2D coll)
+    protected override void OnCollect()
     {
-        base.OnCollide(coll);
+        base.OnCollect();
+        Debug.Log("Grant pesos");
     }
 }
